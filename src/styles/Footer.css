@@ -1,0 +1,21 @@
+.footer {
+    padding-bottom: 30px;
+    margin-top: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+.footer img {
+    width: 5em;
+    margin: 60px;
+}
+
+
+@media all and (max-width: 480px) {
+    .footer {
+        padding-bottom: 60px;
+        font-size: 12px;
+    }
+}
