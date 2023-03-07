@@ -9,7 +9,7 @@ function Home() {
             <div className='banner'>
                 <h1 className="kasa-title">Chez vous, partout et ailleurs</h1>
             </div>
-            <section>
+            <section className='home-section'>
                 {data.map((card) => (
                     <Link to="/accomodation" className='card-link'>
                         <article className="home-card">
