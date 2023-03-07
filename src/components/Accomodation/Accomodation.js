@@ -1,17 +1,19 @@
+import data from '../../data/data.json'
+
 function Accomodation() {
     return (
         <main>
             <div>
-                <img alt=""/>
+                <img alt={data.description}/>
             </div>
-            <h1>Titre</h1>
+            <h1>{data.title}</h1>
             <p></p>
             <ul>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-            <h2>Auteur</h2>
+            <h2>{data.host.name}</h2>
             <i></i>
             <section>
                 <article>

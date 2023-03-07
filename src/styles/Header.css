@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    width: 95%;
+    margin: 40px auto 0 auto;
 }
 
 .kasa-logo {
@@ -18,7 +19,7 @@
 }
 
 .link {
-    margin-left: 55px;
+    margin-left: 60px;
     list-style-type: none;
     color: #ff6060;
     text-decoration: none;
@@ -28,28 +29,6 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
-/* .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../assets/IMG.png');
-    margin: 2em auto;
-    border-radius: 25px;
-    height: 16em;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(60%);
-}
-
-.kasa-title {
-    position: absolute;
-    top: 48%;
-    left: 23%;
-    text-align: center;
-    color: white;
-    font-size: 48px;
-} */
 
 
 /* RESPONSIVE */
