@@ -1,0 +1,36 @@
+.gallery-wrap {
+    position: relative;
+}
+
+.gallery-wrap > img:first-child {
+    position: absolute;
+    top: 40%;
+    left: 25px;
+}
+
+.gallery-wrap > img:last-child {
+    position: absolute;
+    top: 40%;
+    right: 25px;
+}
+
+.gallery-wrap img:first-child:hover, .gallery-wrap img:last-child:hover {
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+.gallery-wrap p {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    color: white;
+    font-size: 18px;
+}
+
+.gallery-img {
+    height: 415px;
+    margin: 2em auto;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+}

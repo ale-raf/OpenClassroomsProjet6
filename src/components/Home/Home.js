@@ -11,7 +11,7 @@ function Home() {
             </div>
             <section className='home-section'>
                 {data.map((card) => (
-                    <Link to="/accomodation" className='card-link'>
+                    <Link to="/logement" className='card-link'>
                         <article className="home-card">
                             <img src={card.cover} alt={card.description}/>
                             <h2 className='card-title'>{card.title}</h2>

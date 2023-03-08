@@ -15,9 +15,8 @@
 
 .card-title {
     position: absolute;
-    top: 190px;
-    left: 30px;
-    width: 50%;
+    left: 20px;
+    bottom: 20px;
 }
 
 .banner {

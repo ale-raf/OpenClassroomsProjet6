@@ -1,22 +1,21 @@
 import data from '../../data/data.json';
 import Collapse from '../Collapse/Collapse';
+import Gallery from '../Gallery/Gallery';
+import Rating from '../Rating/Rating';
+import Tags from '../Tags/Tags';
 import '../../styles/Accomodation.css';
-import rating from '../../assets/salmon-star.png'
+
 
 function Accomodation() {
     return (
         <main className='main-accomodation'>
-            <div>
-                <img src={data[0].cover} className="accomodation-img" alt={data[0].description}/>
-            </div>
+            <Gallery />
             <section className='section-top'>
                 <div className='left-div'>
                     <h1>{data[0].title}</h1>
                     <p>{data[0].location}</p>
                     <ul className='tags'>
-                        <li>{data[0].tags[0]}</li>
-                        <li>{data[0].tags[1]}</li>
-                        <li></li>
+                        {/* <Tags /> */}
                     </ul>
                 </div>
                 <div className='right-div'>
@@ -25,11 +24,7 @@ function Accomodation() {
                         <img src={data[0].host.picture} className="profile-picture" alt={data[0].host.name} />
                     </div>
                     <div>
-                        <img src={rating} alt=""/>
-                        <img src={rating} alt=""/>
-                        <img src={rating} alt=""/>
-                        <img src={rating} alt=""/>
-                        <img src={rating} alt=""/>
+                        {/* <Rating ratings={data[0].rating}/> */}
                     </div>
                 </div>
             </section>
