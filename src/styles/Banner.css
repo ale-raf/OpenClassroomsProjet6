@@ -1,0 +1,49 @@
+.home-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 95%;
+    margin: 50px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url('../assets/first-banner.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.about-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 95%;
+    margin: 50px auto;
+    background-image: url('../assets/second-banner.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.home-title {
+    color: white;
+    font-size: 48px;
+}
+
+
+@media all and (max-width: 480px) {
+    .home-banner {
+        height: 115px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .home-title {
+        font-size: 24px;
+    }
+    .about-banner {
+        height: 225px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+}

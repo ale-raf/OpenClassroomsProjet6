@@ -1,0 +1,51 @@
+.slider {
+    height: 415px;
+    margin: 2em auto;
+    width: 100%;
+}
+
+.slideshow {
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+}
+
+.slideshow p {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    color: white;
+    font-size: 18px;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.left-chevron {
+    left: 25px;
+}
+
+.right-chevron {
+    right: 25px;
+}
+
+
+@media all and (max-width: 480px) {
+    .slider {
+        height: 255px;
+        margin: 1em auto;
+    }
+    .slideshow p {
+        font-size: 14px;
+    }
+    .slideshow img {
+        width: 5%;
+    }
+}

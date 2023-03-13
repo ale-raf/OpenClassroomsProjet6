@@ -1,6 +1,8 @@
-// import { useState } from 'react';
+import Header from '../../components/Header';
+import Banner from '../../components/Banner'
+import Collapse from '../../components/Collapse';
+import Footer from '../../components/Footer'
 import '../../styles/About.css';
-import Collapse from '../Collapse/Collapse';
 
 function About() {
     const aboutArticle = [
@@ -24,12 +26,16 @@ function About() {
     ]
 
     return (
+        <>
+        <Header />
+        <Banner />
         <main className='about-main'>
-            <div className="about-banner"></div>
             {aboutArticle.map((article) => (
-                <Collapse data={article.title} value={article.description}/>
+                <Collapse title={article.title} description={article.description}/>
             ))}
         </main>
+        <Footer />
+        </>
     )
 }
 

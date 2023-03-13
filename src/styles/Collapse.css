@@ -26,6 +26,10 @@
     border-radius: 0 0 5px 5px;
 }
 
+.hide-description {
+    display: none;
+}
+
 .icon-rotate {
     transform: rotate(180deg);
 }
@@ -33,7 +37,7 @@
 @media all and (max-width: 480px) {
     .collapse-article {
         width: 100%;
-        margin: 0;
+        margin: 20px auto;
         font-size: 13px;
     }
 }

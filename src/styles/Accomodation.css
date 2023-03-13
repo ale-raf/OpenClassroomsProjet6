@@ -51,7 +51,7 @@
 }
 
 .right-div h2 {
-    width: 70%;
+    width: 65%;
 }
 
 .profile-picture {
@@ -60,29 +60,8 @@
     object-fit: cover;
 }
 
-.tags {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    font-size: 14px;
-}
-
-.tags li {
-    background-color: #ff6060;
-    border-radius: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    width: 115px;
-    text-align: center;
-}
-
 
 @media all and (max-width: 480px) {
-    .accomodation-img {
-        height: 255px;
-        margin: 1em auto;
-    }
     .section-top {
         flex-wrap: wrap;
     }
@@ -100,9 +79,6 @@
     
     .left-div p {
         font-size: 14px;
-    }
-    .tags {
-        font-size: 10px;
     }
     .right-div {
         display: flex;

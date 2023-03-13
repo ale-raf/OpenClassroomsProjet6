@@ -7,7 +7,7 @@
 }
 
 .kasa-logo {
-    width: 15%;
+    width: calc(100vw - 85vw);
 }
 
 .menu {

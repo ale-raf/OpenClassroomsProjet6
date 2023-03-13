@@ -1,0 +1,26 @@
+.tags {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.tags li {
+    width: 150px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #ff6060;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 480px) {
+    .tags {
+        font-size: 10px;
+    }
+    .tags li {
+        width: 115px;
+        border-radius: 5px;
+    }
+}
