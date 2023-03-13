@@ -1,55 +1,54 @@
 import { useEffect, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import datas from '../../datas/data.json'
 import Header from '../Header';
-import Slideshow from '../Slideshow/Slideshow';
+import Slideshow from '../Slideshow';
 import Tags from '../Tags';
 import Rating from '../Rating';
 import Collapse from '../Collapse';
 import Footer from '../Footer';
-import datas from '../../data/data.json'
 import '../../styles/Accomodation.css';
 
 function Accomodation() {
     const { id } = useParams()
-    let location = useLocation()
-    let path = location.pathname
-    console.log(path)
-    // const [update, setUpdate] = useState(true)
+    const [updateSlider, setUpdateSlider] = useState([])
+    const [updateTags, setUpdateTags] = useState([])
+    const [updateRatings, setUpdateRatings] = useState([])
+    const currentCardPage = datas.filter((data) => data.id === id)
 
     useEffect(() => {
-            if (path === '/:id')
-            datas.filter((card) => card.id === id)
-            // setUpdate(!update)
+            const currentCardPage = datas.filter((data) => data.id === id)
+            setUpdateSlider(currentCardPage[0].pictures)
+            setUpdateTags(currentCardPage[0].tags)
+            setUpdateRatings(currentCardPage[0].rating)
     }, [])
 
     return (
         <>
         <Header />
         <div className='main-accomodation'>
-            {datas
-                .filter((card) => card.id === id)
-                .map((card, index) => ( 
+            {currentCardPage.map((data, index) => ( 
             <main key={index}>            
-                <Slideshow data={datas} id={id} />
+                <Slideshow updateSlider={updateSlider} />
                 <section className='section-top'>
                     <div className='left-div'>
-                        <h1>{card.title}</h1>
-                        <p>{card.location}</p>
-                        <Tags data={datas} id={card.id} tags={card.tags}/>
+                        <h1>{data.title}</h1>
+                        <p>{data.location}</p>
+                        <Tags updateTags={updateTags}/>
                     </div>
                     <div className='right-div'>
                         <div>
-                            <h2>{card.host.name}</h2>
-                            <img src={card.host.picture} className="profile-picture" alt={card.host.name} />
+                            <h2>{data.host.name}</h2>
+                            <img src={data.host.picture} className="profile-picture" alt={data.host.name} />
                         </div>
                         <div>
-                            <Rating rate={card.tags} />
+                            <Rating updateRatings={updateRatings} />
                         </div>
                     </div>
                 </section>
                 <section className='section-bottom'>
-                    <Collapse title="Description" description={card.description}/>
-                    <Collapse title="Équipements" description={card.equipments}/>
+                    <Collapse title="Description" description={data.description}/>
+                    <Collapse title="Équipements" description={data.equipments}/>
                 </section>     
             </main>
             ))}

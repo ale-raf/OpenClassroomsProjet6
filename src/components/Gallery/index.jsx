@@ -1,4 +1,4 @@
-import datas from '../../data/data.json'
+import datas from '../../datas/data.json'
 import Card from '../Card'
 import '../../styles/Gallery.css'
 

@@ -1,16 +1,16 @@
-import data from '../../data/data.json'
 import fullStar from '../../assets/salmon-star.png'
 import emptyStar from '../../assets/grey-star.png'
-// import { useState } from 'react'
 
-function Rating({ rate }) {
-    const rating = data[2].rating
-    const ratings = new Array(rating * 1).fill(rating)
-    ratings.push(5, 5)
-
+function Rating({ updateRatings }) {
+    const ratings = new Array(updateRatings * 1).fill(updateRatings)
+    
+    for (let i = 0; i <= 5; i++) {
+        if (updateRatings < i) ratings.push(i - updateRatings)
+    }
+    
     return (
-        ratings.map((rate, index) => (
-            <img key={`${rate}-${index}`} src={rate <= ratings ? fullStar : emptyStar } alt="rating"/>
+        ratings.map((rating, index) => (
+            <img key={`${rating}-${index}`} src={rating <= ratings ? fullStar : emptyStar } alt="rating"/>
         ))
     )
 }
