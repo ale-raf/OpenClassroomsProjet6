@@ -23,12 +23,12 @@ function Accomodation() {
             setUpdateRatings(currentCardPage[0].rating)
     }, [])
 
-    return (
+    return ( 
         <>
         <Header />
-        <div className='main-accomodation'>
-            {currentCardPage.map((data, index) => ( 
-            <main key={index}>            
+        <main className='main-accomodation'>
+            {currentCardPage.map((data) => ( 
+            <div key={data.id}>            
                 <Slideshow updateSlider={updateSlider} />
                 <section className='section-top'>
                     <div className='left-div'>
@@ -50,9 +50,9 @@ function Accomodation() {
                     <Collapse title="Description" description={data.description}/>
                     <Collapse title="Équipements" description={data.equipments}/>
                 </section>     
-            </main>
+            </div>
             ))}
-        </div>
+        </main>
         <Footer />
         </>
     )

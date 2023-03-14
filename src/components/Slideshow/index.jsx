@@ -26,7 +26,7 @@ function Slideshow({ updateSlider }) {
     }
 
     return (
-        <div className='slider'>
+        <section className='slider'>
             <div className="slideshow" style={{ backgroundImage: `url(${updateSlider[index]})` }}>
                 { updateSlider.length > 1 && 
                     <>
@@ -36,7 +36,7 @@ function Slideshow({ updateSlider }) {
                     </>
                 }
             </div>                
-        </div>
+        </section>
     )
 }
 

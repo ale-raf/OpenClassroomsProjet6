@@ -20,14 +20,18 @@
 
 .link {
     margin-left: 60px;
-    list-style-type: none;
     color: #ff6060;
+    list-style-type: none;
     text-decoration: none;
 }
 
-.link:hover, .link:focus {
+.link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.link-active {
+    text-decoration: underline;
 }
 
 

@@ -32,7 +32,15 @@
 
 .icon-rotate {
     transform: rotate(180deg);
+    animation-name: open;
+    animation-duration: 0.5s;
 }
+
+@keyframes open {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
 
 @media all and (max-width: 480px) {
     .collapse-article {

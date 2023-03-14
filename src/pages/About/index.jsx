@@ -31,7 +31,7 @@ function About() {
         <Banner />
         <main className='about-main'>
             {aboutArticle.map((article) => (
-                <Collapse title={article.title} description={article.description}/>
+                <Collapse key={article.id} title={article.title} description={article.description}/>
             ))}
         </main>
         <Footer />
