@@ -10,7 +10,6 @@
     background-position: center;
     background-size: cover;
     border-radius: 25px;
-    transition: all 0.4s ease-in-out;
 }
 
 .slideshow p {
@@ -25,7 +24,10 @@
     position: absolute;
     top: 40%;
     cursor: pointer;
-    backdrop-filter: blur(4px);
+}
+
+.slideshow img:hover {
+    filter: brightness(85%);
 }
 
 .left-chevron {

@@ -6,6 +6,7 @@
 .section-top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .section-bottom {
@@ -51,7 +52,8 @@
 }
 
 .right-div h2 {
-    width: 65%;
+    width: min-content;
+    margin-right: 10px;
 }
 
 .profile-picture {
@@ -64,6 +66,7 @@
 @media all and (max-width: 480px) {
     .section-top {
         flex-wrap: wrap;
+        margin-bottom: 15px;
     }
     .section-bottom {
         flex-wrap: wrap;
@@ -91,8 +94,5 @@
     }
     .right-div > div:last-child {
         gap: 5px;
-    }
-    .right-div h2 {
-        width: 60%;
     }
 }
