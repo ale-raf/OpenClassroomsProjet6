@@ -9,9 +9,9 @@ import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/logement/:id' element=
+        <Route path='/accomodation/:id' element=
           {<ErrorBoundary>
             <Accomodation />
           </ErrorBoundary>} 

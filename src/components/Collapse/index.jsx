@@ -7,7 +7,7 @@ function Collapse({ title, description }) {
         const [open, setOpen] = useState(false);
     
         function handleClick() {
-            setShow(!show);
+            setShow(!show)
             setOpen(!open)
         }
 

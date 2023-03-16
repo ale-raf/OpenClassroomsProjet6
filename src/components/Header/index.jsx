@@ -13,7 +13,7 @@ function Header() {
             </Link>
             <nav>
                 <ul className='menu'>
-                    <Link to="/" className={ path === '/' ? 'link link-active' : 'link' }>Accueil</Link>
+                    <Link to="/home" className={ path === '/' ? 'link link-active' : 'link' }>Accueil</Link>
                     <Link to="/about" className={ path === '/about' ? 'link link-active' : 'link' }>A propos</Link>
                 </ul>
             </nav>

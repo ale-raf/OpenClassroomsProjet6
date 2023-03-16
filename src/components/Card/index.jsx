@@ -3,7 +3,7 @@ import '../../styles/Card.css'
 
 function Card({ id, title, cover }) {
     return (
-        <Link to={`/logement/${id}`} className='card-link'>
+        <Link to={`/accomodation/${id}`} className='card-link'>
             <article className="home-card">
                 <img src={cover} alt={title}/>
                 <h2 className='card-title'>{title}</h2>
