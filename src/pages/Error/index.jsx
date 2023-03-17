@@ -9,7 +9,7 @@ function Error() {
         <main className="error-wrap">
             <h1 className="error-code">404</h1>
             <p className="error-description">Oups ! La page que vous demandez n'existe pas.</p>
-            <Link to="/home" className="error-link">Retourner sur la page d'accueil</Link>
+            <Link to="/" className="error-link">Retourner sur la page d'accueil</Link>
         </main>
         <Footer />
         </>

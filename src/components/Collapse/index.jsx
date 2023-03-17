@@ -13,15 +13,17 @@ function Collapse({ title, description }) {
 
     return (    
         <article className='collapse-article'>
-            <div onClick={handleClick}>
+            <div className="collapse-title" onClick={handleClick}>
                 <h2>{title}</h2>
-                { open ? <i className="fa-solid fa-angle-down icon-rotate-open"></i> : <i className="fa-solid fa-angle-down icon-rotate-close"></i> }
+                { open ? <i className="fa-solid fa-angle-down icon-open"></i> : <i className="fa-solid fa-angle-down"></i> }
             </div>
+            <div className={ show ? "collapse-display" : "collapse-hide" }>
             { Array.isArray(description) ? 
                 description.map((list, index) => (
-                    <li key={`${list}-${index}`} className={ show ? 'collapse-description' : 'hide-description' }>{list}</li>
+                    <li key={`${list}-${index}`}>{list}</li>
                 )) :
-                    <p className={ show ? 'collapse-description' : 'hide-description' }>{description}</p> }
+                    <p>{description}</p> }
+            </div>
         </article>
     )
 }

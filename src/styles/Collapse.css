@@ -5,7 +5,9 @@
     font-size: 24px;
 }
 
-.collapse-article div {
+.collapse-title {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,42 +15,25 @@
     color: white;
     background-color: #ff6060;
     border-radius: 10px;
-}
-
-.collapse-article div:hover {
     cursor: pointer;
 }
 
-.collapse-description {
+.collapse-display {
     display: block;
-    padding: 15px;
+    padding: 20px;
+    margin-top: -5px;
+    z-index: -1;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
+    list-style-type: none;
 }
 
-.hide-description {
+.collapse-hide {
     display: none;
 }
 
-.icon-rotate-open {
+.icon-open {
     transform: rotate(180deg);
-    animation-name: open;
-    animation-duration: 0.5s;
-}
-
-.icon-rotate-close {
-    animation-name: close;
-    animation-duration: 0.5s;
-}
-
-@keyframes open {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
-}
-
-@keyframes close {
-    from {transform: rotate(180deg);}
-    to {transform: rotate(360deg);}
 }
 
 
@@ -57,7 +42,7 @@
         width: 100%;
         font-size: 13px;
     }
-    .collapse-article div {
+    .collapse-title, .collapse-display {
         border-radius: 5px;
     }
 }

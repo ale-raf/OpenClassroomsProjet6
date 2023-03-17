@@ -51,6 +51,6 @@
         transform: none;
     }
     .home-card img:hover {
-        filter: brightness(70%);
+        filter: brightness(50%);
     }
 }
