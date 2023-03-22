@@ -31,8 +31,12 @@
     font-size: 48px;
 }
 
+.remove-title {
+    display: none;
+}
 
-@media all and (max-width: 480px) {
+
+@media all and (max-width: 768px) {
     .home-banner {
         height: 115px;
         margin: 20px auto;

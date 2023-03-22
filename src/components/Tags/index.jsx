@@ -1,10 +1,10 @@
 import '../../styles/Tags.css'
 
-function Tags({ updateTags }) {
+function Tags({ tags }) {
     return (
         <ul className='tags'>
-            {updateTags.map(tags =>
-                <li key={tags}>{tags}</li>)}
+            {tags.map(tag =>
+                <li key={tag}>{tag}</li>)}
         </ul>
     )
 }

@@ -25,7 +25,6 @@
     z-index: -1;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
-    list-style-type: none;
 }
 
 .collapse-hide {
@@ -37,7 +36,7 @@
 }
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
     .collapse-article {
         width: 100%;
         font-size: 13px;

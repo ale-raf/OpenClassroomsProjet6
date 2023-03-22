@@ -28,10 +28,10 @@ function About() {
     return (
         <>
         <Header />
-        <Banner />
+        <Banner banner='about-banner' bannerTitle='remove-title' />
         <main className='about-main'>
             {aboutArticle.map((article) => (
-                <Collapse key={article.id} title={article.title} description={article.description}/>
+                <Collapse key={article.id} title={article.title} description={article.description} />
             ))}
         </main>
         <Footer />

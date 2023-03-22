@@ -1,13 +1,10 @@
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import '../../styles/Banner.css'
 
-function Banner() {
-    let location = useLocation()
-    let path = location.pathname
-
+function Banner({ banner, bannerTitle }) {
     return (
-        <div className={ path === '/' ? 'home-banner' : 'about-banner' }>
-            { path === '/' ? <h1 className="home-title">Chez vous, partout et ailleurs</h1> : null }
+        <div className={ banner }>
+            <h1 className={ bannerTitle }>Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

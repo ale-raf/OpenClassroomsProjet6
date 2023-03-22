@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
     .tags {
         font-size: 10px;
     }

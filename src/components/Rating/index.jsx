@@ -2,11 +2,11 @@ import fullStar from '../../assets/salmon-star.png'
 import emptyStar from '../../assets/grey-star.png'
 import '../../styles/Rating.css'
 
-function Rating({ updateRatings }) {
-    const ratings = new Array(updateRatings * 1).fill(updateRatings)
+function Rating({ eachRating }) {
+    const ratings = new Array(eachRating * 1).fill(eachRating)
     
     for (let i = 0; i <= 5; i++) {
-        if (updateRatings < i) ratings.push(i - updateRatings)
+        if (eachRating < i) ratings.push(i - eachRating)
     }
     
     return (

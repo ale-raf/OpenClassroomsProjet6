@@ -35,11 +35,6 @@
 
 @media all and (max-width: 768px) {
     .card-link {
-        width: 50%;
-    }
-}
-@media all and (max-width: 480px) {
-    .card-link {
         width: 100%;
     }
     .home-card {

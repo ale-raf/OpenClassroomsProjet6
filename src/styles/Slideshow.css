@@ -39,7 +39,7 @@
 }
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
     .slider {
         height: 255px;
         margin: 1em auto;

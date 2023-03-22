@@ -21,7 +21,6 @@
 .link {
     margin-left: 60px;
     color: #ff6060;
-    list-style-type: none;
     text-decoration: none;
 }
 
@@ -35,14 +34,7 @@
 }
 
 
-/* RESPONSIVE */
 @media all and (max-width: 768px) {
-    .menu {
-        font-size: 18px;
-    }
-}
-
-@media all and (max-width: 480px) {
     .menu {
         font-size: 12px;
         text-transform: uppercase;
