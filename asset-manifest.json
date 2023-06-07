@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/OpenClassroomsProjet6/static/css/main.00a3890f.css",
+    "main.js": "/OpenClassroomsProjet6/static/js/main.53f81bfe.js",
+    "static/js/787.0ce615c0.chunk.js": "/OpenClassroomsProjet6/static/js/787.0ce615c0.chunk.js",
+    "static/media/second-banner.png": "/OpenClassroomsProjet6/static/media/second-banner.abab3f12f4cb82f1dfa1.png",
+    "static/media/first-banner.png": "/OpenClassroomsProjet6/static/media/first-banner.d00ae7dd3ef927bb988d.png",
+    "static/media/Montserrat-Regular.ttf": "/OpenClassroomsProjet6/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "index.html": "/OpenClassroomsProjet6/index.html",
+    "main.00a3890f.css.map": "/OpenClassroomsProjet6/static/css/main.00a3890f.css.map",
+    "main.53f81bfe.js.map": "/OpenClassroomsProjet6/static/js/main.53f81bfe.js.map",
+    "787.0ce615c0.chunk.js.map": "/OpenClassroomsProjet6/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00a3890f.css",
+    "static/js/main.53f81bfe.js"
+  ]
+}
